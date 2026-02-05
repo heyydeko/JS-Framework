@@ -1,0 +1,6 @@
+s1 = prompt("Введите свою фамилию")
+s2 = prompt("Введите свое имя")
+s3 = prompt("Введите свое отчество")
+result = confirm(s1 + " " + s2 + " " + s3 + "\nВерно?")
+if (result) alert("Молодец!\n" + s1 + " " + s2 + " " + s3)
+    else alert("Ошибка")
