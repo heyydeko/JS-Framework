@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <script>
+    function func(str1, str2){
+      h = parseInt(str1)
+      m = parseInt(str2)
+      if (m <= 58) alert("Через минуту будет " + h + " часов " + (m + 1) + " минут")
+        else if (m == 59 && h <= 22) alert("Через минуту будет " + (h + 1) + " часов" + " 0 минут")
+        else if (m == 59 && h == 23) alert("Через минуту будет 0 часов 0 минут")
+    }
+    </script>
+  </head>
+  <body>
+    <script>
+    str1 = prompt("Введите часы")
+    str2 = prompt("Введите минуты")
+    </script>
+    <input type="button" value="Нажми Меня" onclick="func(str1, str2)" />
+  </body>
+</html>
